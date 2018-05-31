@@ -6,6 +6,7 @@ Sample::Sample(QWidget *parent)
 	ui.setupUi(this);
 	connect(ui.addPB, SIGNAL(pressed()), SLOT(addSlot()));
 	connect(ui.deletePB, SIGNAL(pressed()), SLOT(deleteSlot()));
+	connect(ui.clearPB, SIGNAL(pressed()), SLOT(clearSlot()));
 }
 
 Sample::~Sample()
@@ -24,5 +25,10 @@ void Sample::deleteSlot()
 	ui.listWidget->takeItem(currentrow);
 
 
+}
+
+void Sample::clearSlot()
+{
+	ui.listWidget->clear();
 }
 

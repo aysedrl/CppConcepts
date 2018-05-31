@@ -14,6 +14,7 @@ public:
 public slots:
 	void addSlot();
 	void deleteSlot();
+	void clearSlot();
 
 private:
 	Ui::SampleClass ui;
