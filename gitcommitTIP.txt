@@ -1,0 +1,11 @@
+
+checkout için git clone https://github.com/aysedrl/cpp
+
+
+git init
+git config user.name "aysedrl"
+git config user.email "gingy.lily@gmail.com"
+git add *
+git commit -m "some init msg"
+
+veya git commit --all
